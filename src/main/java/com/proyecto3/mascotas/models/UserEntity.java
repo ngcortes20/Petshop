@@ -3,6 +3,7 @@ package com.proyecto3.mascotas.models;
 import java.time.Instant;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -19,18 +20,23 @@ import lombok.Setter;
 @Table(name="users")
 public class UserEntity {
 
+    @Id private Long id;
+
     // Main attributes
     
     private String firstName;
     private String lastName;
     private String email;
     private String password;
-    private String confimPassword;
+    private String confirmPassword;
     private String address;
     private String phone;
 
     // Relationships
 
+    // MASCOTAS
+    // ORDENES
+    // REVIEWS
     
     // Creation attributes
 
