@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @MappedSuperclass
-public class PetItem {
+public class Item {
 
     @Id private Long id;
     private String name;

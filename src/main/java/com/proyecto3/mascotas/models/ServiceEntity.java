@@ -1,6 +1,6 @@
 package com.proyecto3.mascotas.models;
 
-import com.proyecto3.mascotas.models.classes.PetItem;
+import com.proyecto3.mascotas.models.classes.Item;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -11,6 +11,6 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "services")
-public class ServiceEntity extends PetItem{
-    private Integer duration;
+public class ServiceEntity extends Item{
+    private Integer duration; //min
 }
