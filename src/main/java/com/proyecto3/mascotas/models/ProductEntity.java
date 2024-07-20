@@ -1,6 +1,6 @@
 package com.proyecto3.mascotas.models;
 
-import com.proyecto3.mascotas.models.classes.PetItem;
+import com.proyecto3.mascotas.models.classes.Item;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -11,6 +11,6 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "products")
-public class ProductEntity extends PetItem {
-    private Integer quantity;
+public class ProductEntity extends Item {
+    private Integer stock;
 }

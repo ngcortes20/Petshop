@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -19,6 +20,8 @@ import lombok.Setter;
 @Entity
 @Table(name = "pets")
 public class PetEntity {
+
+    @Id private Long id;
     
     // Main attributes
 

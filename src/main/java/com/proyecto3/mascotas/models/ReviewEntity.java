@@ -3,6 +3,7 @@ package com.proyecto3.mascotas.models;
 import java.time.Instant;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -19,10 +20,13 @@ import lombok.Setter;
 @Table(name = "reviews")
 public class ReviewEntity {
     
+    @Id private Long id;
+
     // Main attributes
 
     private Integer rating;
     private String comment;
+    
 
     // Relationships
     

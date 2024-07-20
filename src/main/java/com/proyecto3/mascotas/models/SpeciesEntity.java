@@ -3,6 +3,7 @@ package com.proyecto3.mascotas.models;
 import java.time.Instant;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -19,9 +20,11 @@ import lombok.Setter;
 @Table(name="species")
 public class SpeciesEntity {
 
+    @Id private Long id;
+
     // Main attributes
     
-    private String name;
+    private String name; // gatos, perros, hamsters
 
     // Relationships
     
