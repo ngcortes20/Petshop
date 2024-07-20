@@ -1,0 +1,87 @@
+:root {
+    --main-red: rgb(220,53,69);
+    --a-link: rgb(102, 102, 102);
+    font-size: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--a-link);
+}
+
+.nation-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+    padding-block: 10px;
+    padding-right: 20px;
+    color: var(--a-link);
+}
+
+.nation-container p:hover {
+    cursor: pointer;
+}
+
+.nation-container img{
+    width: 25px;
+    height: 25px;
+    filter: invert(36%) sepia(2%) saturate(13%) hue-rotate(316deg) brightness(103%) contrast(81%);
+}
+
+.logo-container {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.shadow-header {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 10px -15px;
+    position: relative;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.22rem;
+    font-weight: 600;
+    color: #ddd;
+}
+
+.links a:hover {
+    color: var(--main-red);
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--a-link);
+}
+
+.hero img {
+    width: 100%;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.cta-red {
+    background-color: var(--main-red);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2em;
+    border-style: none;
+    font-size: 14px;
+}
