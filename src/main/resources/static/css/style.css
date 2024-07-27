@@ -1,87 +1,47 @@
-:root {
-    --main-red: rgb(220,53,69);
-    --a-link: rgb(102, 102, 102);
-    font-size: "Raleway", sans-serif;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: var(--a-link);
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.nation-container {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: end;
-    padding-block: 10px;
-    padding-right: 20px;
-    color: var(--a-link);
+.logo{
+    width: 300px;
+    height: 100px;
+    padding-left: 600px;
 }
 
-.nation-container p:hover {
-    cursor: pointer;
-}
-
-.nation-container img{
-    width: 25px;
-    height: 25px;
-    filter: invert(36%) sepia(2%) saturate(13%) hue-rotate(316deg) brightness(103%) contrast(81%);
-}
-
-.logo-container {
+nav{
+    margin-top: 10px;
+    padding: 20px;
     text-align: center;
-    padding: 15px 0;
 }
 
-.shadow-header {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 10px -15px;
-    position: relative;
-    padding-bottom: 20px;
-    z-index: 10;
+.barra {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.links {
+.front{
+    width: 300px;
+    height: 300px;
+}
+
+.dogs{
+    width: 300px;
+    height: 300px;
+}
+.intro{
+    background-color: rgb(213, 208, 200);
     display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 30px;
     justify-content: center;
-    gap: 15px;
-    font-size: 1.22rem;
-    font-weight: 600;
-    color: #ddd;
 }
 
-.links a:hover {
-    color: var(--main-red);
-    text-decoration: underline;
-}
-
-.hero {
-    background-color: rgb(246, 246, 246);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-align: center;
-    color: var(--a-link);
-}
-
-.hero img {
-    width: 100%;
-}
-
-.main-text {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-}
-
-.cta-red {
-    background-color: var(--main-red);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 2em;
-    border-style: none;
-    font-size: 14px;
+h2{
+    margin-top: 120px;
 }
